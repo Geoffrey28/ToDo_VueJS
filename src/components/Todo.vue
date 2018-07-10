@@ -6,13 +6,14 @@
                 <td>{{ task.name }}</td>
                 <td>{{ task.desc }}</td>
                 <td><input type="checkbox" @change="$emit('taskchange', task)"></td>
-                <td><button @click="$emit('deletetask', task)" type="button">X</button></td>
+                <td><button class="destroy" @click="$emit('deletetask', task)" type="button">X</button></td>
             </tr>
         </tbody>
     </transition>
 </template>
 
 <script>
+import { Appdata } from '../index'
 export default {
     name: 'Item',
     props: {

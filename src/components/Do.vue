@@ -1,12 +1,12 @@
 <template>
     <transition name="fade">
         <tbody>
-            <tr class="item" v-for="(task, index) in tasks" v-if="task.done === true" v-bind:key="task.name">
+            <tr class="item" v-for="(task, index) in tasks" v-if="task.done === true" v-bind:key="index">
                 <td>{{ index }}</td>
                 <td>{{ task.name }}</td>
                 <td>{{ task.desc }}</td>
                 <td><input checked type="checkbox" @change="$emit('taskchange', task)"></td>
-                <td><button @click="$emit('deletetask', task)" type="button">X</button></td>
+                <td><button class="destroy" @click="$emit('deletetask', task)" type="button">X</button></td>
             </tr>
         </tbody>
     </transition>

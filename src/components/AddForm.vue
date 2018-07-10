@@ -27,13 +27,9 @@ export default {
     
     methods: {
         clearForm() {
-            const inputs = document.querySelectorAll('input')
-            for (let i = 0; i < inputs.length; i++) {
-                if (inputs[i].type == 'text') {
-                    inputs[i].value = ''
-                    console.log(inputs[i].value)
-                }
-            }
+            this.inputname = ''
+            this.inputdesc = ''
+            console.log(this.inputname, this.inputdesc)
         }
     }
 }

@@ -1,0 +1,21 @@
+tr {
+    width: 100%;
+}
+.slide-fade-enter-active {
+    transition: all 1s linear;
+}
+.slide-fade-leave-active {
+    transition: all 1s linear;
+}
+.slide-fade-enter {
+    transform: translateY(20%);
+    opacity: 0;
+}
+.slide-fade-leave-to {
+    transform: translateY(-40%);
+    opacity: 0;
+}
+.container[data-v-0a61a4] {
+    display: flex;
+    justify-content: space-around;
+}
