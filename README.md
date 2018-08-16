@@ -3,5 +3,5 @@
 ```
 1. npm install
 
-2. npm start
+2. npm run start
 ```
